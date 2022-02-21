@@ -3,11 +3,11 @@ let ages = [3, 9, 23, 64, 2, 8, 28, 93];
 
 //1a. Programmatically subtract the value of the first element in the array from the value in the last element of the array (do not use numbers to reference the last element, find it programmatically, ages[7] – ages[0] is not allowed). Print the result to the console.
 let difference = ages[ages.length - 1] - (ages[ages.length - ages.length]);
-console.log(difference);
+console.log("The difference of the first element from the last element of this array is " + difference);
     
 //1b. Add a new age to your array and repeat the step above to ensure it is dynamic (works for arrays of different lengths).
 ages.push(10);
-console.log(ages[ages.length - 1] - (ages[ages.length - ages.length]));
+console.log( ages[ages.length - 1] - (ages[ages.length - ages.length]));
 
 
 //1c. Use a loop to iterate through the array and calculate the average age. Print the result to the console.
@@ -123,3 +123,8 @@ function willBuyDrink(isHotOutside, moneyInPocket){
 console.log(willBuyDrink(true, 11));
 
 //13. Create a function of your own that solves a problem. In comments, write what the function does and why you created it.
+//This function returns a persons full name.
+function createFullName(firstName, middleInitial, lastName){
+    return firstName + ' ' + middleInitial + ' ' + lastName;
+}
+console.log(createFullName('Glennys', 'E', 'Fuentes'));
